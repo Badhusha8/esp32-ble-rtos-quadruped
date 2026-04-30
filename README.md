@@ -74,15 +74,3 @@ Connect at **115200 baud** (any terminal; `idf.py monitor` works great).
 | `delay(ms)` | `vTaskDelay(pdMS_TO_TICKS(ms))` |
 | `Serial.readStringUntil('\n')` | UART driver + ring-buffer task |
 
-## Git setup (first time)
-
-```bash
-cd robodog
-git init
-git add .
-git commit -m "Initial commit: ESP-IDF port of RoboDog"
-
-# Add remote and push
-git remote add origin <your-repo-url>
-git push -u origin main
-```
